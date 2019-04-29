@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="user_bean" class="com.blogvillain.spring_code.container.User">
+        <property name="id" value="nokdoot"></property>
+        <property name="name" value="ndt"></property>
+        <property name="role" ref="role_bean"/>
+    </bean>
+    
+    <bean name="role_bean" class="com.blogvillain.spring_code.container.Role">
+        <property name="mission" value="dominate"></property>
+    </bean>
+    
+</beans>
