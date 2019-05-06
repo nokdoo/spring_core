@@ -3,16 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.blogvillain.spring_code._02bean.factory.objectmethod;
-
+package com.blogvillain.spring_core._03dependency.constructor_based;
 
 /**
  *
  * @author nokdoot
  */
-public class FactoryClass {
-
-    public InstanceClass createInstance(){
-        return new InstanceClass();
-    }
+public class ThingTwo {
+    // Any contents if you want to have anything.
+    // See _02bean pacakges in detail.
 }

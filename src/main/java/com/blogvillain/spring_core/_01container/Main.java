@@ -3,7 +3,7 @@
 * To change this template file, choose Tools | Templates
 * and open the template in the editor.
 */
-package com.blogvillain.spring_code._01container;
+package com.blogvillain.spring_core._01container;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,29 +16,29 @@ public class Main {
     public static void main(String[] args) {
 
         /*
-          |-------|      (1)     |---------------|
+        
+          |-------|              |---------------|
           | java  |  <---------- |     beans     |
           | class |   follow     |      in       |
           |       |   definition | configuration |
-          |-------|              |---------------|
+          |-------|   (1)        |---------------|
                                          ^
         ================================ | ================================
         ================================ | loads (3) ====================== 
         ================================ | ================================
                                          |
                                    |-----------|   (4)   |---------|
-          (2) -------------------->| container | 1-----M | objects |
+              -------------------->| container | 1-----M | objects |
               |                    |-----------|         |---------|
               |                          ^                  
         ===== | ======================== | ================================
-        ===== | initiate =============== | ================================
+        ===== | initiate (2) =========== | find and get object (5) ========
         ===== | ======================== | ================================
               |                          |                   
-          | users | <--- find and get ---|
-                         object
-                         (5)         
-                       
-                       
+          |-------|                      |
+          | users | <--------------------|
+          |-------|      
+
         */
         
         ApplicationContext context = new ClassPathXmlApplicationContext("configuration.xml");

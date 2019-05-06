@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.blogvillain.spring_code._01container;
+package com.blogvillain.spring_core._01container;
 
 /**
  *

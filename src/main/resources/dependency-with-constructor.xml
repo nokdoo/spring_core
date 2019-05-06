@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="beanOne" class="com.blogvillain.spring_core._03dependency.constructor_based.ThingOne">
+<!--        
+        1. You don't need to meet the order of constructor arguments 
+-->     
+<!--
+        <constructor-arg ref="beanThree"/>
+        <constructor-arg ref="beanTwo"/>
+        -->
+
+        
+<!--         
+        2. If you want to use primary types, then input the each type 
+          because Spring doesn't know what they are 
+-->     
+<!--        
+        <constructor-arg type="int" value="77777"/>
+        <constructor-arg type="String" value="77777"/>
+        -->
+        
+        
+<!--    
+        3. you can specify the index following the order of constructor arguments
+-->        
+<!--
+        <constructor-arg index="0" value="77777"/>
+        <constructor-arg index="1" value="String"/>
+        -->
+
+        
+<!--        
+        4. you can specify the name following the each constructor argument
+-->
+
+        <constructor-arg name="two" value="77777"/>
+        <constructor-arg name="three" value="String"/>
+
+    </bean>
+    
+    <bean name="beanTwo" class="com.blogvillain.spring_core._03dependency.constructor_based.ThingTwo"/>
+    <bean name="beanThree" class="com.blogvillain.spring_core._03dependency.constructor_based.ThingThree"/>
+        
+    
+</beans>
