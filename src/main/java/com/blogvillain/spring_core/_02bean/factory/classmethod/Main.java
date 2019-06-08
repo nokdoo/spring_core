@@ -15,8 +15,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args){
         ApplicationContext context = new ClassPathXmlApplicationContext("bean-with-classmethod.xml");
-        InstanceClass instance = context.getBean("forInstance", InstanceClass.class);
-        InstanceClass anotherIntance = context.getBean("forAnotherInstance", InstanceClass.class);
+        InstanceClass instance = context.getBean("Instance", InstanceClass.class);
+        InstanceClass anotherIntance = context.getBean("AnotherInstance", InstanceClass.class);
         System.out.println("breakpoint");
     }
 }

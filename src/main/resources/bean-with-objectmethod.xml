@@ -6,7 +6,7 @@
     <bean name="factoryAsObject" class="com.blogvillain.spring_core._02bean.factory.objectmethod.FactoryClass">
     </bean>
     
-    <bean name="forInstance"
+    <bean name="Instance"
         factory-bean="factoryAsObject"
         factory-method="createInstance">
         <property name="property1" value="p1"/>
@@ -14,7 +14,7 @@
                     
     </bean>
     
-    <bean name="forAnotherInstance"
+    <bean name="AnotherInstance"
         factory-bean="factoryAsObject"
         factory-method="createInstance">
     </bean>

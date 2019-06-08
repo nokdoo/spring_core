@@ -2,15 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    
-    <bean name="Instance"
-        class="com.blogvillain.spring_core._02bean.constructor.InstanceClass">
-        <property name="property1" value="p1"/>
-        <property name="property2" value="2"/>
+
+    <bean name="A" class="com.blogvillain.spring_core._04method.injection.undesirable.A">
     </bean>
     
-    <bean name="AnotherInstance"
-        class="com.blogvillain.spring_core._02bean.constructor.InstanceClass">
+    <bean name="B" class="com.blogvillain.spring_core._04method.injection.undesirable.B">
     </bean>
     
 </beans>

@@ -3,13 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="forUser" class="com.blogvillain.spring_core._01container.User">
+    <bean id="User" class="com.blogvillain.spring_core._01container.User">
             <property name="id" value="nokdoot"></property>
             <property name="name" value="ndt"></property>
-            <property name="role" ref="forRole"/>
+            <property name="role" ref="Role"/>
     </bean>
     
-    <bean name="forRole" class="com.blogvillain.spring_core._01container.Role">
+    <bean name="Role" class="com.blogvillain.spring_core._01container.Role">
         <property name="mission" value="dominate"></property>
     </bean>
     
