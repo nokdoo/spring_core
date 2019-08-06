@@ -8,14 +8,7 @@ package com.blogvillain.spring_core._01container;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- *
- * @author nokdoot
- */
-public class Main {
-    public static void main(String[] args) {
-
-        /*
+/*
         
           |-------|              |---------------|
           | java  |  <---------- |     beans     |
@@ -40,10 +33,15 @@ public class Main {
           |-------|      
 
         */
-        
+
+/**
+ *
+ * @author nokdoot
+ */
+public class Main {
+    public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("configuration.xml");
         User user = context.getBean(User.class);
         System.out.println("breakpoint");
     }
-    
 }
